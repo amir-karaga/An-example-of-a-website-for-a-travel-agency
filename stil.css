@@ -1,0 +1,538 @@
+body, * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+}
+body{
+    background-image: url("./Images/pozadina.jpg");
+}
+#wrapper{
+    height: 100%;
+    width: 70%;
+   
+    margin: auto;
+    border-left:black 2px solid;
+    border-right:black 2px solid;
+}
+nav{
+    background-image: url("./Images/Cigle.jpg");
+    color: brown;
+    font-style: italic;
+    font-family: cursive;
+    
+    text-shadow: 5px 5px 5px rgba(192, 192, 192, 0.753);
+
+
+}
+#meni{
+    height:15%;
+    width:69.7%;
+position: fixed;
+border: 2px solid black;
+
+}
+#Izbornik{
+    height: 70%;
+    padding-top:5%;
+}
+a.IzbornikStavka{
+    text-decoration: none;
+    margin-left:10%;
+    color: white;
+    font-style: italic;
+    font-family: cursive;
+    display: inline;
+    cursor: pointer;
+    font-weight: bolder;
+    border:black 2px solid;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.514);
+}
+a.IzbornikStavka:hover{
+    background-color:rgba(255, 255, 255, 0.26);
+    color:black;
+}
+#glavni img{height: 100%;}
+#glavni{
+    height: 85%;
+    padding-top:5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:1s;                      
+}
+
+#donji{
+    height: 15%;
+    background-image: url("./Images/Cigle.jpg");
+    text-align: center;
+    
+}
+#glavni h1{
+    color:white;
+    text-shadow: 5px 5px 5px black;
+    padding-top:25%;
+    text-align:center;
+    font-style: italic;
+    font-family: cursive;
+}
+#donji h3{
+    height: 50%;
+    font-style: italic;
+    font-family: cursive;
+    margin-top:0;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.514);
+    text-shadow:2px 2px 2px black;
+
+}
+
+#donji h2{
+
+    height: 50%;
+    font-style: italic;
+    font-family: cursive;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.514);
+    text-shadow:2px 2px 2px black;
+}
+#oNama{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    background-color: rgba(192, 192, 192, 0.678);
+}
+
+#Putovanja{
+    background-color: darkcyan;
+    
+}
+#oNama h1{
+    height:10%;
+    font-style: italic;
+    font-family: cursive;
+    text-shadow:5px 5px 5px black;
+}
+#zaslike{
+    display: flex;
+    flex-direction: row;
+    height:70%;
+}
+.kocke{
+    background-image: url("./Images/Cigle.jpg");
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-style: italic;
+    font-family: cursive;
+    border:2px solid black;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding-top: 5%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 25%;
+    height: 50%;
+    margin-top: 15%;
+    margin-left:6.3%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    
+    
+}
+.kocke:hover{
+    opacity: 0.5;
+}
+.Kontejner {
+    margin-top: 15px;
+    clear: left;
+}
+img.VilaKolonaOkvir {
+    max-width: 90%;
+    max-height: 40%;
+    border:none;
+    cursor: pointer;
+    padding-top: 5%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+img.VilaKolonaOkvir:hover{
+    opacity:90%;
+}
+.VilaKolonaWrapper {
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+h3, h4 {
+    margin-top: 10px;
+    height:5%;
+    text-shadow:5px 5px 5px black;
+    font-style: italic;
+    font-family: cursive;
+    color:white;
+}
+p.VilaOpis {
+    margin-top: 10px;
+    text-shadow:5px 5px 5px black;
+    font-style: italic;
+    font-family: cursive;
+    color:white;
+}
+.KolonaTextbox {
+    width: 33.33333333%;
+    float: left;
+}
+#forma1 input{
+    background-color: rgba(0, 0, 0, 0.473);
+    color:white;
+    border-radius: 10px;
+}
+input {
+    width:100%;
+    padding: 5px;
+    height:10%;
+}
+input::placeholder{
+    color:white;
+}
+label{
+    text-shadow:2px 2px 2px black;
+}
+.BtnSend{
+        background-color:  rgba(95, 158, 160, 0.76);
+        color:white;
+        width:100%;
+        height:35px;
+        cursor:pointer;
+        margin-top:2%;
+        border-radius: 10px;
+        text-shadow:2px 2px 2px black;
+}
+#Rezervacije{
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgba(255, 255, 255, 0.486);
+    height:auto;
+}
+#kontaktirajte h1{
+    text-shadow:5px 5px 5px black;
+    font-style: italic;
+    font-family: cursive;
+}
+#Rezervacije h1{
+    color:white;
+    text-shadow:5px 5px 5px black;
+    font-style: italic;
+    font-family: cursive;
+    text-align:center;
+    padding-top:2%;
+    margin-bottom:4%;
+}
+.kontakt{
+    margin-left:6%;
+    margin-top:3%;
+}
+#prvi{
+    height:25%;
+    background-color:rgba(192, 192, 192, 0.671);
+    padding-top:5%;
+}
+#kontaktirajte{
+    text-align:center;
+    color:white;
+}
+#drugi{
+    height:25%;
+    background-color: rgba(245, 245, 245, 0.336);
+    display: flex;
+    flex-direction: row;
+}
+.slika{
+    max-width: 30%;
+    max-height: 40%;
+    margin-left:16%;
+}
+#treci{
+    height:50%;
+    display: flex;
+    flex-direction: row;
+    margin-top:2%;
+}
+#kolona1 p{
+    padding:5%;
+    margin-left:5%;
+    color:white;
+}
+#Ponude{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-right: 5%;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+#kolona2 h3{
+    margin-bottom:4%;
+    margin-left:20%;
+}
+#sveSlike{
+    display:flex;
+    flex-direction: row;
+}
+#Ponude h2{
+    text-align:center;
+    margin-top:5%;
+    height:5%;
+    margin-bottom:5%;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    font-style: italic;
+    font-family: cursive;
+    margin-left:2.5%;
+}
+label{
+    color:white;
+    font-style: italic;
+    font-family: cursive;
+}
+#kolona1 p{
+    font-style: italic;
+    font-family: cursive;
+}
+#kolona2 h3{
+    color:white;
+    font-style: italic;
+    font-family: cursive;
+}
+.slika{
+    cursor:pointer;
+}
+textarea{
+    background-color: rgba(255, 255, 255, 0.548);
+    color:white;
+    font-style: italic;
+    font-family: cursive;
+}
+.slika3{
+    max-width: 100%;
+    max-height: 50%;
+    border:2px solid black;
+    background-color: rgba(0, 0, 0, 0.637);
+    padding-top: 5%;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.SlikaOpis{
+    margin-left:5%;
+}
+.SlikaOpis h3{
+    height:20%;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    font-style: italic;
+    font-family: cursive;
+}
+
+.SlikaOpis h4{
+    height:10%;
+    color:white;
+    text-shadow:2px 2px 2px black;
+    font-style: italic;
+    font-family: cursive;
+}
+input{
+    background-color: rgba(255, 255, 255, 0.548);
+    color:white;
+    font-style: italic;
+    font-family: cursive;
+}
+button{
+    color:white;
+    font-style: italic;
+    font-family: cursive;
+}
+#footer{
+    height: 15%;
+    background-image: url("./Images/Cigle.jpg");
+    text-align: center;
+    margin-top:18%;
+    margin-bottom:1%;
+}
+#footer h3{
+    height: 50%;
+    font-style: italic;
+    font-family: cursive;
+    margin-top:0;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.514);
+    text-shadow:2px 2px 2px black;
+}
+
+#footer h2{
+
+    height: 50%;
+    font-style: italic;
+    font-family: cursive;
+    color:white;
+    background-color:rgba(0, 0, 0, 0.514);
+    text-shadow:2px 2px 2px black;
+}
+#dviGornje{
+    display: flex;
+    flex-direction: row;
+    
+}
+#dviDonje{
+    display: flex;
+    flex-direction: row;
+
+}
+#kontaktGornji{
+    display: flex;
+    flex-direction: row;
+}
+#kontaktDonji{
+    display: flex;
+    flex-direction: row;
+}
+.error{
+    color:red;
+    display: block;
+}
+#Slika-error{
+    height: 5%;
+}
+#prezime-error{
+    height: 5%;
+}
+#email-error{
+    height: 5%;
+}
+#naslov-error{
+    height: 5%;
+}
+#area-error{
+    height: 5%;
+}
+#oNama h1{
+    padding:5%;
+    margin-left:2.3%;
+}
+@media only screen and (max-width: 600px)
+{
+    *{
+        margin:0;
+        padding:0;
+    }
+    #wrapper{
+        width:100%;
+        margin:0;
+    }
+    #meni{
+        width:100%;
+        margin:0;
+        position:static;
+        border:none;
+        border-bottom:2px solid black;
+    }
+    a.IzbornikStavka{
+        margin:0;
+        font-size:80%;
+        margin-left:1.8%;
+    }
+    #glavni{
+        height:50%;
+        width:100%;
+    }
+    #zaslike{
+        margin-top:35%;
+        height:50%;
+        font-size:70%;
+    }
+    #donji{
+        width:100%;
+    }
+    #oNama{
+        width:100%;
+    }
+    #sveSlike{
+        display: flex;
+        flex-direction: column;
+    }
+    .SlikaOpis h3{
+        font-size:70%;
+    }
+    .SlikaOpis h4{
+        font-size:70%;
+    }
+    .VilaKolonaWrapper h3,h4,p{
+        font-size:70%;
+    }
+    label{
+        font-size:70%;
+    }
+    input::placeholder {
+        font-size:70%;
+    }
+    input {
+        font-size:70%;
+    }
+    #kontaktGornji{
+        flex-direction: column;
+    }
+    #kontaktDonji{
+        flex-direction: column;
+    }
+    #drugi{
+        height:40%;
+    }
+    .kontakt{
+        font-size:70%;
+        margin-left:12%;
+    }
+    #treci{
+        flex-direction: column-reverse;
+        margin-top:75%;
+    }
+    #kolona2 h3{
+        text-align:center;
+    }
+    body{
+        width:100%;
+        margin:0;
+    }
+   #kolona2 h3{
+       margin-left:0;
+
+   }
+   #kolona1 p{
+       margin-top: 40%;
+       padding:0;
+       margin-left:0;
+   }
+   #oNama h1{
+       padding-left:0;
+       padding-right:0;
+       margin-left:0;
+   }
+   .kontakt{
+       width:70%;
+   }
+   #footer{
+       margin-top: 110%;
+       margin-bottom: 0;
+   }
+
+}

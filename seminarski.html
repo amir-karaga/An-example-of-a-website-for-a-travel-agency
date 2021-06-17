@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./stil.css">
+    <script src="external/jquery/jquery.js"></script>
+    <script src="jquery-validation-1.16.0/dist/jquery.validate.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrapper">
+    <div id="meni">
+    <nav>
+        
+         <div id="Izbornik">
+        <a class="IzbornikStavka" href="#glavni">Pocetna</a> 
+        <a class="IzbornikStavka" href="#donji">O nama</a> 
+        <a class="IzbornikStavka" href="#Ponude">Putovanja</a> 
+        <a class="IzbornikStavka" href="#Rezervacije">Rezervacije</a> 
+        <a class="IzbornikStavka" href="#kontakt">Kontakt</a>
+      </div>
+      </nav>
+    </div>
+      <div id="glavni">
+          <h1>TURISTICKA AGENCIJA MOSTAR</h1>
+          
+      </div>
+      <div id="donji">
+        <h3>Polazna tacka vaseg</h3>
+        <h2 >SAVRSENOG PUTOVANJA</h2>
+      </div>
+      <div id="oNama">
+        <h1 style=" color: gainsboro;">UPOZNAJTE NAJBOLJE</h1>
+        <div id="zaslike">
+        <div class="kocke" style="margin-top:5%; background-image: url('./Images/kravice.jpg'); background-size: cover; background-repeat: no-repeat; text-align:center;color: black;">luptate culpa, tempora minus?</div>
+        <div class="kocke" style="margin-top:10%; background-image: url('./Images/destinacija_2.jpg');background-size: cover;background-repeat: no-repeat; color:black;">c ad dolor ullam autem placeat maxime fugiat, atque in?</div>
+        <div class="kocke" style="margin-top:15%;background-image: url('./Images/destinacija_3.jpg'); background-size: cover;background-repeat: no-repeat; ">Lordsadasdasd asd spernatur iure labore dolore!</div>
+        </div>
+        <h1 style="text-align: right; padding-right: 6.2%;color:white;">SVJETSKE DESTINACIJE</h1>
+      </div>
+      <div id="Ponude">
+          <h2>NAJBOLJE PONUDE</h2>
+          <div id="sveSlike">
+            <div id="dviGornje">
+            <div class="SlikaOpis">
+              <img class="slika3" src="Images/ponuda1.jpg"/>
+              <h3>KAPADOKIJA - KRUŽNA TURA IZ SARAJEVA</h3>
+              <h4>CIJENA 699 KM</h4>
+            </div>
+            <div class="SlikaOpis">
+              <img class="slika3" src="Images/ponuda2.jpg"/>
+              <h3>ANTIČKA GRČKA, PLAŽE ZAKINTOSA & SARONSKI OTOCI IZ ZAGREBA</h3>
+              <h4>CIJENA 1475 KM</h4>
+            </div>
+          </div>
+          <div id="dviDonje">
+            <div class="SlikaOpis">
+              <img class="slika3" src="Images/ponuda3.jpg"/>
+              <h3>JOŠ ISTANBULA IZ SARAJEVA </h3>
+              <h4>CIJENA 399 KM</h4>
+            </div>
+            <div class="SlikaOpis">
+              <img class="slika3" src="Images/ponuda4.jpg"/>
+              <h3>BARCELONA IZ ZAGREBA</h3>
+              <h4>CIJENA 965 KM</h4>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div id="Rezervacije">
+            <h1>Rezervacije putovanja</h1>
+        <div  class="Kontejner">
+            <div class="VilaKolonaWrapper">
+              <img class="VilaKolonaOkvir" src="Images/team2.jpg" onclick="promjeni()" id="1"/>
+              <h3>Putovanje u Crnu Goru</h3>
+              <h4>159 KM po danu</h4>
+              <p class="VilaOpis">Odlicna ljetna destinacija. Veoma blizu more samo je plaza daleko.</p>
+            </div>
+           
+            <div class="VilaKolonaWrapper">
+                <img class="VilaKolonaOkvir" src="Images/team1.jpg" onclick="promjeni()" id="2" />
+                <h3>Villa Makarska</h3>
+                <h4>185 KM po danu</h4>
+                <p class="VilaOpis">Najbolja ponuda ovog ljeta. Provedite ljeto u Hrvatskoj.</p>
+            </div>
+    
+            <div class="VilaKolonaWrapper">
+                <img class="VilaKolonaOkvir" src="Images/team3.jpg" onclick="promjeni()" id="3" />
+                <h3>Hotel Neum</h3>
+                <h4>167 KM po danu</h4>
+                <p class="VilaOpis">Odlicna ponuda po veoma privlacnoj cijeni. Najsigurnije je u Bosni zbog Korone.</p>
+            </div>
+          </div>
+          <div  class="Kontejner">
+            <form id="forma1">
+              <div><label>Ponuda</label><input id="Slika" name="Slika" readonly placeholder="Kliknite na sliku"  type="text" /></div>
+        
+                <div class="KolonaTextbox">
+                    <label>Dani</label> <input name="BrojDana" id="BrojDana"  type="number" />
+                </div>
+                <div class="KolonaTextbox">
+                    <label>Cijena po danu</label> <input id="CijenaPoDanu" name="CijenaPoDanu" readonly  type="number" />
+                </div>
+                <div class="KolonaTextbox">
+                   <label >Ukupno</label> <input id="IznosUkupno" name="IznosUkupno" readonly  type="text" type="number" />
+                </div>
+              
+              <label>Name</label> <input name="ime" type="text" />
+              <label>Email</label> <input name="Email"  type="email" />
+             
+              <button class="BtnSend" type="submit">Rezerviši</button>
+            </form>
+          </div>
+      </div>
+      <div id="kontakt">
+          <div id="prvi">
+              <div id="kontaktirajte">
+                <h1>KONTAKTIRAJTE NAS</h1>
+              </div>
+          </div>
+          <div id="drugi">
+            <div id="kontaktGornji">
+              <div class="kontakt">
+                <a href="https://www.facebook.com/">
+                <img class="slika" src="Images/slika_fb.png" /></a>
+                <h3>TRAVEL AGENCY</h3>
+              </div>
+              <div class="kontakt">
+                <a href="https://office.live.com/start/Outlook.aspx?ui=hr%2DHR&rs=HR">
+                <img class="slika" src="Images/email_slika.png"/></a>
+                <h3>info@travelagency.com</h3>
+              </div>
+            </div>
+            <div id="kontaktDonji">
+              <div class="kontakt">
+                <img class="slika" src="Images/slika4.png"/>
+                <h3>387(0)555 856 585</h3>
+              </div>
+              <div class="kontakt">
+                <a href="https://www.google.com/maps/place/Mostar+88000/@43.3395487,17.7862211,13z/data=!3m1!4b1!4m5!3m4!1s0x134b43a43b6340a9:0x14f32b2d4e37c5a!8m2!3d43.3437748!4d17.8077578">
+                <img class="slika" src="Images/lokacija_slika.png"/></a>
+                <h3>Lokacija Mostar</h3>
+              </div>
+            </div>
+          </div>
+          <div id="treci">
+              <div id="kolona1">
+                  <p>OSNOVNE INFORMACIJE<br/><br>
+                  TRAVELAGENCY.BA d.o.o.<br/>
+                    Ul. Kralja Petra Krešimira IV 88000 Mostar, BiH<br/>
+                    ID:  42264544644440007<br/><br/>
+                    
+                    Rješenje o reg. Br: Tt-O216/14<br/><br/>
+                    
+                    UniCredit Bank dd Mostar<br/>
+                    Broj transakcijskog  računa:  3381302654646456464325<br/>
+                    Broj deviznog računa/IBAN: BA39 35464646464  46 46 64 6 5711;<br/>
+                    SWIFT: UNC54A 22 –</p>
+              </div>
+              <div id="kolona2">
+                  <h3>POŠALJITE NAM PORUKU</h3>
+                <form id="forma2">
+                    <label>Ime</label><input id="Slika" name="Name" placeholder="Unesite ime"  type="text" />
+        
+                          <label>Prezime</label> <input name="prezime" id="prezime"  type="text" placeholder="Unesite prezime"/>
+                     
+                          <label>Email</label> <input id="email" name="email"   type="email" placeholder="Unesite email"/>
+                    <label>Naslov</label> <input name="naslov" id="naslov" type="text" />
+                    <label>Poruka</label>
+                    <textarea id="area" name="area" style="height: 20%; width:100%;"></textarea>
+                   
+                    <button class="BtnSend" type="submit">Send Message</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div id="footer">
+        <h3>Polazna tačka vašeg</h3>
+        <h2 >SAVRSENOG PUTOVANJA</h2>
+      </div>
+    </div>
+    <script src="files/script.js"></script>
+</body>
+</html>
